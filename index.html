@@ -4,7 +4,12 @@
 		<title>
 			Survey about Programers Preferences
 		</title>
-		<link href="style.css" rel="stylesheet" />
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="survey form about programers" />
+		<meta name="keywords" content="HTML, CSS, Programmer, survey" />
+		<meta name="author" content="Hussein Kandil" />
 	</head>
 	<body>
 		<header>
@@ -12,77 +17,87 @@
 				Programers Preferences survey form
 			</h1>
 			<p id="description">
-				Your opinion will make difference, Thank you in advance.
+				Your opinion will make difference, <br />Thank you in advance.
 			</p>
 		</header>
 		<main>
 			<form id="survey-form">
-				<label id="name-label" for="name" style="display:block;">
-					Name:<br/>
-					<input required id="name" name="name" type="text" placeholder="Enter your name." required />
-				</label>
-				<label id="email-label" for="email" style="display:block;">
-					Email:<br/>
-					<input required id="email" name="email" type="email" placeholder="Enter your Email" />
-				</label>
-				<label id="number-label" for="number" style="display:block;">
-					Age (optional):<br/> 
-					<input id="number" name="age" type="number" min="16" max="116" placeholder="Age" />
-				</label>
-				<label id="dropdown-label" for="dropdown" style="display:block;">
-					What is your favorite IDE/TE?<br/>
-					<select id="dropdown" name="select-ide">
-						<option value="Note pade">
-							Note pad
-						</option>
-						<option value="Atom">
-							Atom
-						</option>
-						<option value="VSCode">
-							VSCode
-						</option>
-						<option value="Vim">
-							Vim
-						</option>
-						<option value="Emacs">
-							Emacs
-						</option>
-						<option value="Other">
-							Other
-						</option>
-					</select>
-				</label>
-				<label id="radio-label" for="radio" style="display:block;">
-					What is your favorite OS (Operating System)?<br/>
-					<input id="radio" name="OS" type="radio" value="Windows"/>
-						Windows<br/>
-					<input id="radio" name="OS" type="radio" value="Mac OS"/>
-						Mac (X OS)<br/>
-					<input id="radio" name="OS" type="radio" value="Linux" checked/>
-						Linux<br/>
-				</label>
-				<label id="checkbox-label" for="checkbox" style="display:block;">
-					Choose at least on porogramming language that you prefer:<br/>
-					<input id="checkbox" name="OS" type="checkbox" value="Python"checked/>
-						Python<br/>
-					<input id="checkbox" name="OS" type="checkbox" value="Java"/>
-						Java<br/>
-					<input id="checkbox" name="OS" type="checkbox" value="Php"/>
-						Php<br/>
-					<input id="checkbox" name="OS" type="checkbox" value="Javascript"/>
-						Javascript<br/>
-					<input id="checkbox" name="OS" type="checkbox" value="Ruby"/>
-						Ruby<br/>
-					<input id="checkbox" name="OS" type="checkbox" value="C++"/>
-						C++<br/>
-					<input id="checkbox" name="OS" type="checkbox" value="C#"/>
-						C#<br/>
-				</label>
-				<label id="textarea-lebel" for="textarea" style="display:block;">
-					Tell us about your favorite frameworks and other technologies that we didn't mention:<br/>
-					<textarea id="textarea" name="framework" cols="50" rows="10">
-					</textarea>
-				</label>
+				<fieldset id="personal-info">
+					<label id="name-label" for="name">
+						Name:
+						<input required id="name" name="name" type="text" placeholder="Enter your name." required />
+					</label>
+					<label id="email-label" for="email">
+						Email:
+						<input required id="email" name="email" type="email" placeholder="Enter your Email" />
+					</label>
+					<label id="number-label" for="number">
+						Age (optional): 
+						<input id="number" name="age" type="number" min="16" max="116" placeholder="Age" />
+					</label>
+				</fieldset>
+				<fieldset id="ide">
+					<label id="dropdown-label" for="dropdown">
+						What is your favorite IDE/TE?
+						<select id="dropdown" name="select-ide">
+							<option value="Note pade">
+								Note pad
+							</option>
+							<option value="Atom">
+								Atom
+							</option>
+							<option value="VSCode">
+								VSCode
+							</option>
+							<option value="Vim">
+								Vim
+							</option>
+							<option value="Emacs">
+								Emacs
+							</option>
+							<option value="Other">
+								Other
+							</option>
+						</select>
+					</label>
+				</fieldset>
+				<fieldset id="os">
+					<label id="radio-label" for="radio" style="display:block;">
+						What is your favorite OS (Operating System)?<br/>
+						<input id="radio" name="OS" type="radio" value="Windows"/>
+							Windows<br/>
+						<input id="radio" name="OS" type="radio" value="Mac OS"/>
+							Mac (X OS)<br/>
+						<input id="radio" name="OS" type="radio" value="Linux" checked/>
+							Linux<br/>
+					</label>
+				</fieldset>
+				<fieldset id="prog-lang">
+					<label id="checkbox-label" for="checkbox" style="display:block;">
+						Choose at least on porogramming language that you prefer:<br/>
+						<input id="checkbox" name="OS" type="checkbox" value="Python"checked/>
+							Python<br/>
+						<input id="checkbox" name="OS" type="checkbox" value="Java"/>
+							Java<br/>
+						<input id="checkbox" name="OS" type="checkbox" value="Php"/>
+							Php<br/>
+						<input id="checkbox" name="OS" type="checkbox" value="Javascript"/>
+							Javascript<br/>
+						<input id="checkbox" name="OS" type="checkbox" value="Ruby"/>
+							Ruby<br/>
+						<input id="checkbox" name="OS" type="checkbox" value="C++"/>
+							C++<br/>
+						<input id="checkbox" name="OS" type="checkbox" value="C#"/>
+							C#<br/>
+					</label>
+				</fieldset>
+				<fieldset id="other-tech">
+					<label id="textarea-lebel" for="textarea" style="display:block;">
+						Tell us about your favorite frameworks and other technologies that we didn't mention:<br/>
+						<textarea id="textarea" name="framework" cols="50" rows="10">
+						</textarea>
+					</label>
+				</fieldset>
 				<button form="survey-form" id="submit" type="submit">
 					Submit
 				</button>
