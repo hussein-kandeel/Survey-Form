@@ -1,0 +1,44 @@
+body {
+	background-color: rgb(15, 25, 35);
+	color: #1ff01f;
+	width: 80vw;
+	max-width: 720px;
+	margin: 0 auto;
+	font-size: 10px;
+	font-family: monospace;
+}
+form {
+	margin: 0;
+	padding: 0;
+}
+fieldset {
+	border: 0;
+	border-bottom: 1px solid #ffffff;
+	padding: 10px 0;
+}
+label {
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: left;
+}
+input[type="text"], input[type="email"], input[type="number"] {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+input {
+	height: 20px;
+}
+h1, p {
+	margin: 0 auto;
+	text-align: center;
+}
+h1 {
+	font-size: 2rem;
+}
+p {
+	font-size: 1rem;
+	font-style: italic;
+}
